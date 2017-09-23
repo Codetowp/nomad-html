@@ -126,6 +126,13 @@ $(window).resize(function(){
         left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/3,
         top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/3
     });
+	
+	
+	 $('.search-block form').css({
+        position:'relative',
+        top: ($(window).height() - $('.search-block form ').outerHeight())/4
+    });
+	
 
 });
 
@@ -133,6 +140,27 @@ $(window).resize(function(){
 $(window).resize();
 
 
+
+// footer hover change color
+$(document).ready(function() {     
+    $('.social-nav ul li a').hover(function(){     
+        $('.footer-bottom').addClass('result_hover');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('result_hover');     
+    });
+});   
+
+
+// search top
+$('.search-up').on('click', function(e) {
+    $( ".search-block" ).slideToggle( "slow", function() {
+        // Animation complete.
+    });
+
+    $(this).toggleClass("menu-up menu-down")
+    e.preventDefault();
+});
 
 
 /*creating click event*/

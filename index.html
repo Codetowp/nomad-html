@@ -24,9 +24,12 @@
 <link href="css/owl.theme.css" rel="stylesheet" media="screen">
 <link href="css/animate.css" rel="stylesheet" media="screen">
 
+<!-- lightbox Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/lity.css">
+
 <!-- Stylesheet
     ================================================== -->
-
 <link rel="stylesheet" type="text/css"  href="style.css">
 <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Open+Sans:300,400,600,700,800|Lato:300,400|Crimson+Text:400,400i,600' rel='stylesheet' type='text/css'>
 <!--<link rel="stylesheet" type="text/css"  href="color-red.css">-->
@@ -42,6 +45,9 @@
 <body>
 <header id="menutop"> 
   
+  
+  
+  
   <!-- Navigation
     ==========================================-->
   <nav id="top-menu" class="navbar navbar-default navbar-fixed-top"> 
@@ -50,7 +56,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html">Digital Nomad<span>Simple ideas to Earn Online </span></a> </div>
+        <a class="navbar-brand" href="index.html"><img src="img/logo-s.png"> Digital Nomad<span>Simple ideas to Earn Online </span></a> </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
@@ -85,14 +91,35 @@
           <li><a href="#" class="page-scroll">Support</a></li>
           <li><a href="#" class="page-scroll">Contact</a></li>
         </ul>
+        
+        
+        
+        
       </div>
       <!-- /.navbar-collapse --> 
-      
+     <a class="search-up pull-right"><i class="fa fa-search"></i></a>
     </div>
     <!-- /.container-fluid --> 
     
   </nav>
+  
+  
+  
+  <div class="clearfix"></div>
+  <!-- search-block -->
+<div class="search-block" style="">
+<div class="container">
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<form>
+<input type="search" placeholder="Search here...">
+</form>
+</div>
+</div>
+</div>
+</div>  <!-- /search-block -->
 </header>
+
 
 
 
@@ -394,18 +421,35 @@ theme options...<a href="#">Read more</a> </p>
 <div class="container">
 <div class="row text-center">
 
+<!--website details-->
+<div class="footer-site-content">
+
+<img src="img/logo-s.png" >
+<p>Digital Nomad </p>
+
+</div>
+
 
 
 <!--Page nav-->
 <div class="col-md-12 page-nav">
-
+<ul>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 </div><!--/Page nav-->
 
 <!--social-nav-->
 <div class="col-md-12 social-nav">
 
 <ul>
-<li><a href="#">jhjhjh</a></li>
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#"><i class="fa fa-behance"></i></a></li>
+<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
 
 </ul>
 
@@ -418,7 +462,9 @@ theme options...<a href="#">Read more</a> </p>
 
 <!--copy-right-->
 <div class="col-md-12 copy-right">
-
+<p> &copy; Copyright 2017. All Rights Reserved.</p>
+<hr>
+<p> Designed by <a href="#">Dcrazed Team</a>.</p>
 </div><!--/copy-right-->
 
 
@@ -433,6 +479,7 @@ theme options...<a href="#">Read more</a> </p>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/lity.js"></script>
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script src="js/owl.carousel.js"></script> 
 
@@ -448,5 +495,10 @@ $(document).on('click', '[data-lightbox]', lity);;
 new WOW().init();
 
 </script>
+<script>
+// Bind as an event handler
+$(document).on('click', '[data-lightbox]', lity);
+</script>
+
 </body>
 </html>
