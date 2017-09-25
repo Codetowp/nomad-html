@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/*top nav header*/
+.on {
+	background-color: red !important;}
+/*home bannerr*/	
+.head-social-link li a:hover{color:red; transition:all 0.5s;}	
+/*home article anchor*/
+#home-content article .entry-header p a{color:red;}
+/*tag*/
+.widget_tag_cloud .tagcloud{background:red;}
+/*footer*/
+.footer-bottom{background:red;}
