@@ -2073,11 +2073,20 @@ aside li a:hover {
 	background-color: transparent;
 	display: inline-block;
 }
+
+.widget_search input{border-left:none; padding:15px 0 15px 13px;}
 .widget_search .input-group-btn button {
-	padding: 12px 20px;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+	    padding: 15px 0px 13px 20px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background:none;
+	border: 1px solid #e3e8f0;
+	color:#e3e8f0;
+	font-size:16px;
+	margin-right:-1px;
+	border-right:none;
 }
+.widget_search .input-group-btn button:hover{border: 1px solid #e3e8f0; opacity:0.8; transition:all 0.5s; border-right:none;}
 .widget_social li a {
 	display: inline-block;
 }
@@ -2501,6 +2510,56 @@ embed, iframe, object {
 	color: #aab3bc;
 	font-weight: 600;
 }
+
+
+
+.posts-navigation {
+	display: block;
+	padding: 80px 0 40px;
+}
+.posts-navigation ul {
+	text-align: center;
+	margin-left: 0 !important;
+	padding-left: 0;
+}
+
+.posts-navigation ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 10px 10px;
+	
+	width: auto !important;
+	font-family: 'Montserrat', sans-serif;
+	margin: 25px auto !important;
+}
+.posts-navigation ul li:before {
+	display: none !important;
+}
+.posts-navigation ul li a {
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+	color: #3a405b;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 18px;
+	border-radius:50%;
+	border: 1px #f0f2f7 solid;
+	margin: 0 auto !important;
+}
+.posts-navigation ul li a:hover {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-color: #f7f7f7;
+	background: #f7f7f7;
+	color: #3a405b;
+}
+.posts-navigation .nav-next a{border-radius:0; position:absolute; right:0; border-bottom:none; border-top:none; border-right:none; border-width:2px; 
+}
+.posts-navigation .nav-previous  a{border-radius:0; border-bottom:none; border-top:none; border-left:none; border-width:2px; position:absolute; left:0;
+}
+
+
 /*--------------------
 6.1 Gallery & captions
 ----------------------*/
@@ -2562,10 +2621,92 @@ embed, iframe, object {
 	color: #fff;
 	padding: 25px 0;
 }
-.result_hover {
+
+
+.fa-facebook-b {
+	background: #4867aa;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-facebook-b .footer-site-content:before {
+	border-bottom: 120px solid #4867aa;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+.fa-twitter-b {
+	background: #1da1f2;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-twitter-b .footer-site-content:before {
+	border-bottom: 120px solid #1da1f2;
+	transition: all 0.5s ease-in-out;
+}
+
+
+.fa-google-plus-b {
+	background: #df493a;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-google-plus-b .footer-site-content:before {
+	border-bottom: 120px solid #df493a;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+.fa-behance-b {
+	background: #010103;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-behance-b .footer-site-content:before {
+	border-bottom: 120px solid #010103;
+	transition: all 0.5s ease-in-out;
+}
+
+
+.fa-dribbble-b {
+	background: #ea4c89;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-dribbble-b .footer-site-content:before {
+	border-bottom: 120px solid #ea4c89;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.fa-tumblr-b {
+	background: #36465d;
+	transition: all 0.5s ease-in-out;
+}
+
+.fa-tumblr-b .footer-site-content:before {
+	border-bottom: 120px solid #36465d;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+.fa-youtube-b {
 	background: red;
 	transition: all 0.5s ease-in-out;
 }
+
+.fa-youtube-b .footer-site-content:before {
+	border-bottom: 120px solid red;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+
 .footer-site-content {
 	position: relative;
 	width: 190px;
@@ -2593,10 +2734,7 @@ embed, iframe, object {
 	left: -5px;
 	top: -39px;
 }
-.result_hover .footer-site-content:before {
-	border-bottom: 120px solid red;
-	transition: all 0.5s ease-in-out;
-}
+
 .page-nav ul {
 	display: block; padding-left:0;
 }
@@ -2650,10 +2788,11 @@ Responsive queries
 	padding: 17px 12px;
 }
 .posts-navigation ul li:nth-child(1) {
-	display: block;
+	display: block; position:inherit;
 }
 .posts-navigation ul li:last-child {
 	display: block;
+	position:inherit;
 }
 }
  @media (max-width: 768px) {
@@ -2743,7 +2882,7 @@ aside {
 }
  @media (max-width: 603px) {
 	 
-	 
+
 	 
 
 #home-banner p {
@@ -2801,6 +2940,8 @@ aside {
 }
 }
  @media (max-width: 360px) {
-
+.search-block{height:38vh; top:22%;}	 
+.search-block form{position:static !important;}
 }
 
+ 
