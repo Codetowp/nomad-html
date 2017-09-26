@@ -121,10 +121,10 @@ $(window).resize(function(){
     });
 	
 	
-    $('.entry-header .content, #page-banner .content').css({
+    $('.single .entry-header .content, #page-banner .content').css({
         position:'relative',
-        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/3,
-        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/3
+        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/2,
+        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/2
     });
 	
 	
