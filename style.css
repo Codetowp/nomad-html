@@ -3006,9 +3006,11 @@ blockquote {
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
+	overflow:hidden;
+	position:relative;
 }
 
-/*blockquote:after{
+blockquote:after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -3016,9 +3018,10 @@ blockquote {
 	bottom: 0;
 	right: 0;
 	width: 100%;
+	z-index:1;
 	height: 100%;
-	background: #222328;
-	opacity: 0.5;}*/
+	background: #fff;
+	opacity: 0.5;}
 
 
 blockquote:before{background: url(img/bq-bg.png) 0 0 no-repeat;
@@ -3029,6 +3032,7 @@ blockquote:before{background: url(img/bq-bg.png) 0 0 no-repeat;
     height: 69px;
     margin-bottom: -60px;
     margin-left: -92px;
+	z-index:9;
     }
 
 .page blockquote{margin-left:8.333%;}
@@ -3040,10 +3044,12 @@ blockquote p {
 	padding-left: 0 !important;
 	margin: 0px !important;
 	line-height: 1.7 !important;
+	position:relative;
+	z-index:9;
 }
 
 
-blockquote strong{color:#000; margin-top:20px; display:block;}
+blockquote strong{color:#000; margin-top:20px; display:block; position:relative; z-index:9;}
 
 .page figure img, .single .single-post article figure img {
 	width: 100%;
