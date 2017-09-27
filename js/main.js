@@ -121,17 +121,19 @@ $(window).resize(function(){
     });
 	
 	
-    $('.entry-header .content, #page-banner .content').css({
+    $('.single .entry-header .content, #page-banner .content').css({
         position:'relative',
-        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/3,
-        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/3
+        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/2,
+        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/2
     });
 	
 	
 	 $('.search-block form').css({
         position:'relative',
-        top: ($(window).height() - $('.search-block form ').outerHeight())/4
+        top: ($(window).height() - $('.search-block form ').outerHeight())/5
+		
     });
+	
 	
 
 });
@@ -143,13 +145,90 @@ $(window).resize();
 
 // footer hover change color
 $(document).ready(function() {     
-    $('.social-nav ul li a').hover(function(){     
-        $('.footer-bottom').addClass('result_hover');    
+
+//facebook
+    $('.social-nav ul li a .fa-facebook').hover(function(){     
+        $('.footer-bottom').addClass('fa-facebook-b');    
     },     
     function(){    
-        $('.footer-bottom').removeClass('result_hover');     
+        $('.footer-bottom').removeClass('fa-facebook-b');     
     });
+	
+	
+	//twitter
+	  $('.social-nav ul li a .fa-twitter').hover(function(){     
+        $('.footer-bottom').addClass('fa-twitter-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-twitter-b');     
+    });
+	
+	
+	//google plus
+	
+  $('.social-nav ul li a .fa-google-plus').hover(function(){     
+        $('.footer-bottom').addClass('fa-google-plus-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-google-plus-b');     
+    });
+	
+	
+		//behance
+	
+  $('.social-nav ul li a .fa-behance').hover(function(){     
+        $('.footer-bottom').addClass('fa-behance-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-behance-b');     
+    });
+	
+	
+		//tumblr
+	
+  $('.social-nav ul li a .fa-tumblr').hover(function(){     
+        $('.footer-bottom').addClass('fa-tumblr-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-tumblr-b');     
+    });
+	
+	
+		//behance
+	
+  $('.social-nav ul li a .fa-dribbble').hover(function(){     
+        $('.footer-bottom').addClass('fa-dribbble-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-dribbble-b');     
+    });
+	
+	
+	
+			//youtube
+	
+  $('.social-nav ul li a .fa-youtube').hover(function(){     
+        $('.footer-bottom').addClass('fa-youtube-b');    
+    },     
+    function(){    
+        $('.footer-bottom').removeClass('fa-youtube-b');     
+    });
+	
+	
+	
+	
 });   
+
+
+
+
+
+
+
+
+
+
+
 
 
 // search top
