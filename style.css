@@ -3008,7 +3008,7 @@ blockquote {
 	background-position: center;
 }
 
-blockquote:after{
+/*blockquote:after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -3018,7 +3018,7 @@ blockquote:after{
 	width: 100%;
 	height: 100%;
 	background: #222328;
-	opacity: 0.5;}
+	opacity: 0.5;}*/
 
 
 blockquote:before{background: url(img/bq-bg.png) 0 0 no-repeat;
