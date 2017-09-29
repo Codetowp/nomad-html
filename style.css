@@ -245,11 +245,11 @@ p a:hover {
 #top-menu.navbar-default .navbar-nav li:hover {
 	border-bottom: 2px #51dde97 solid;
 	transition: all 0.5s;
-	background: #2196f3;
-	color: #fff;
+	background: #fff;
+	color: #c39f76;
 }
 #top-menu.navbar-default .navbar-nav li:hover > a {
-	color: #fff;
+	color: #c39f76;
 	transition: all 0.5s;
 }
 #top-menu.navbar-default .navbar-nav ul {
@@ -260,6 +260,24 @@ p a:hover {
 	padding: 0;
 	padding-top: 30px;
 }
+
+
+#top-menu.navbar-default .navbar-nav ul:before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 7px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid #fff;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	z-index: 1;
+}
+
+
 #top-menu.navbar-default .navbar-nav li.menu-item-has-children a.page-scroll:after {
 	transform: rotate(90deg)
 }
@@ -3503,8 +3521,8 @@ opacity:0.8;
 	top: -.5em;
 	left: -.5em;
 	margin: 0;
-	border-radius: 0;
-	background-color: #ff4a5d;
+	border-radius: 10px;
+	background-color: #1285e0;
 	color: #fff;
 	font-size: .857em;
 	-webkit-font-smoothing: antialiased;
@@ -3771,8 +3789,8 @@ opacity:0.8;
 	margin: 1px;
 }
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
-	background: #222328;
-	color: #fff;
+	background: #f7f7f7;
+	color: #404040;
 }
 .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
 	margin: 0;
@@ -3782,16 +3800,18 @@ opacity:0.8;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-weight: 500;
-	padding: 10px 15px;
+	padding: 10px 13px;
 	min-width: 1em;
-	color: #404040;
+	color:#d3ced2;
 	display: block;
 }
 .woocommerce nav.woocommerce-pagination ul li {
 	border-right: 0px solid #d3ced2;
 	padding: 0;
+	color: #d3ced2;
 	margin: 0;
 	float: left;
+	border-radius:50%;
 	display: inline;
 	overflow: hidden;
 }
@@ -4154,8 +4174,17 @@ aside {
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-	width: 48% !important;
+	width: 100% !important;
 }
+
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{float:none; width:100%; display:block;}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images{float:none; display:block; width:100%;}
+#woocommerce-page {
+    padding: 80px 15px 180px 15px;
+}
+
 #article-slider .article-slider-caption h2 {
     font-size: 16px;
    
