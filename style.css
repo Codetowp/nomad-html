@@ -2522,12 +2522,15 @@ embed, iframe, object {
 
 .head-social-link li a:hover{color:#2196f3; transition:all 0.5s;}
 
-.home-anchor {
+.btn-white {
 	color: #504f4f;
 	background: #fff;
 	font-weight: 800;
 	margin-top: 35px;
 }
+
+.btn-white:hover{color: #504f4f; opacity:0.8;  transition:all 0.5s;}
+
 #home-content {
 	padding: 145px 0 145px;
 }
