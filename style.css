@@ -3301,7 +3301,7 @@ opacity:0.8;
 
 
 
-#page-banner2 {
+#page-banner-others {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -3309,11 +3309,11 @@ opacity:0.8;
 	background-size: cover;
 	background-position: center;
 	padding: 80px 0;
-	height: 300px;
+	height: 330px;
 	position: relative;
 	text-align: left;
 }
-#page-banner2:before {
+#page-banner-others:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -3325,8 +3325,8 @@ opacity:0.8;
 	background: #000;
 	opacity: 0.7;
 }
-#page-banner2 .content {
-	margin-top:2%;
+#page-banner-others .content {
+	margin-top:4%;
 	position: relative;
 	color:#fff;
 }
@@ -3433,7 +3433,13 @@ opacity:0.8;
 
 
 
+.search.search-no-results section#home-content h1{color:#e6eaee;}
+
+.search.search-no-results section#home-content p strong{color:#7d888a;}
+
 /*Woocommerce product page*/
+
+.woocommerce div.product .product_title{color:#404040; font-weight:700;}
 
 
 #woocommerce-page {
@@ -3653,7 +3659,7 @@ opacity:0.8;
 	width: 48%;
 }
 .woocommerce div.product div.summary {
-	margin-bottom: 2em;
+	margin-bottom: 10em;
 }
 .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
 	float: right;
@@ -3670,15 +3676,15 @@ opacity:0.8;
 	letter-spacing: 0.5px;
 }
 .woocommerce-product-details__short-description p {
-	color: #43484d;
+	color: #7d888a;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	line-height: 2;
 	letter-spacing: 0.8px;
 	display: block;
-	border-bottom: 1px #ececec solid;
-	padding-bottom: 30px;
+	border-bottom: 0px #ececec solid;
+	padding-bottom: 12px;
 	margin-bottom: 16px;
 }
 .page-content, .entry-content, .entry-summary {
@@ -3833,6 +3839,29 @@ post-type-archive-product.woocommerce ul.products li.product:hover .add_to_cart_
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+
+
+
+
+.woocommerce div.product div.images img {
+    display: block;
+    width: 75%;
+    float: right;
+    height: auto;
+    box-shadow: none;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+
+
+
+
+
 
 
 /*--------------------
